@@ -24,7 +24,7 @@ void alocamapa(MAPA* m) {
 	m->matriz = malloc(sizeof(char*) * m->linhas);
 
 	for(int i = 0; i < m->linhas; i++) {
-		m->matriz[i] = malloc(sizeof(char) * m->colunas + 1);
+		m->matriz[i] = malloc(sizeof(char) * (m->colunas + 1));
 	}
 }
 
